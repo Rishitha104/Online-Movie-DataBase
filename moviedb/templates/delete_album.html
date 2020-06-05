@@ -1,0 +1,21 @@
+<doctype html="">
+    <style>body{background-color:lightseagreen;
+    }
+    </style>
+    <head><title>Delete Movie - Online Movie Database</title></head>
+    <body>
+    <h2>Delete Movie</h2>
+    
+    {% from "_formhelpers.html" import render_field %}
+    <form method="post">
+        <dl>
+            {{ render_field(form.artist) }}
+            {{ render_field(form.title) }}
+            {{ render_field(form.release_date) }}
+            {{ render_field(form.publisher) }}
+            {{ render_field(form.media_type) }}
+        </dl>
+        <p><input type="submit" value="Delete">
+    </p></form>
+    </body>
+    </doctype>
